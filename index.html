@@ -24,7 +24,7 @@
                 </span>
             </a>
             <p id="pontos">15</p>
-            <button>
+            <button onclick="resetaGrid()">
                 <span class="material-symbols-outlined">
                     refresh
                 </span>
@@ -33,8 +33,14 @@
         <main id="corpo-jogo">
 
         </main>
-    </div>
 
+
+    </div>
+    <div class="configuracao">
+        <input type="number" id="nLinhas" placeholder="numero de linhas">
+        <input type="number" id="ncolunas" placeholder="numero de colunas">
+        <button id="definirMatrix" onclick="definirMatrix()">Criar</button>
+    </div>
 
     <script src="jquery.js"></script>
     <script src="scripts.js"></script>
